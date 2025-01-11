@@ -11,7 +11,8 @@ body {
   font-family: "Fira Sans", serif;
 }
 
-header, main{
+header,
+main {
   padding: 0 10%;
 }
 
@@ -32,7 +33,7 @@ p {
 }
 
 nav {
-  height: 80px;
+  height: 100px;
   padding: 15px 0;
 }
 .nav-content {
@@ -55,9 +56,16 @@ nav {
   background: transparent;
   padding: 13px 23px;
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+  background-color: rgb(0, 106, 80);
+  color: white;
 }
 
 .hero {
+  margin-top: 20px;
   height: 560px;
   padding: 80px 70px 80px 70px;
   border-radius: 24px;
@@ -95,6 +103,13 @@ nav {
   border-radius: 8px;
   background: rgb(0, 106, 80);
   border: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: rgb(0, 106, 80, 0.8);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .hero-img-content {
@@ -116,6 +131,11 @@ nav {
   background: white;
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.pillars-card:hover {
+  background: rgb(247, 235, 207);
 }
 
 .pillars-card img {
@@ -178,6 +198,12 @@ nav {
   border-radius: 8px;
   border: none;
   background: rgb(84, 144, 245);
+  transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+  box-shadow: 1px 1px 10px white;
+  opacity: 0.8;
 }
 
 .quote-by-yunus {
@@ -298,6 +324,13 @@ select {
   border: none;
   padding: 13px 26px;
   background: rgb(0, 106, 80);
+  transition: all 0.3s ease;
+}
+
+.news-card-btn:hover {
+  text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  background: rgb(0, 106, 80, 0.8);
 }
 
 .donate-section {
@@ -328,6 +361,11 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.donate-card:hover {
+  background-color: rgb(198, 228, 214);
 }
 
 .donate-amount {
@@ -359,6 +397,13 @@ select {
   background: rgb(0, 106, 80);
   padding: 18px 30px;
   margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.donate-btn:hover {
+  text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  background: rgb(0, 106, 80, 0.8);
 }
 
 .subscribe-main {
@@ -393,6 +438,11 @@ select {
   border-radius: 8px 0px 0px 8px;
 }
 
+#subscribe-box::placeholder {
+  font-size: 18px;
+  color: rgba(14, 14, 14, 0.3);
+}
+
 .subscribe-btn {
   font-size: 16px;
   font-weight: 600;
@@ -401,16 +451,23 @@ select {
   border-radius: 0px 8px 8px 0px;
   background: rgb(0, 106, 80);
   padding: 18px 30px;
+  transition: all 0.3s ease;
 }
 
-footer{
+.subscribe-btn:hover{
+  text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  background: rgb(0, 106, 80, 0.8);
+}
+
+footer {
   height: 220px;
   margin-top: 40px;
   background-color: white;
   padding: 50px 160px;
 }
 
-.foot-content{
+.foot-content {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -418,18 +475,18 @@ footer{
   justify-content: space-between;
 }
 
-.foot-border{
+.foot-border {
   height: 1px;
   width: 100%;
   border-bottom: 1px solid rgba(14, 14, 14, 0.1);
 }
 
-.foot-text h3{
+.foot-text h3 {
   font-size: 30px;
   font-weight: 700;
 }
 
-.foot-social{
+.foot-social {
   display: flex;
   align-items: center;
   justify-content: center;
